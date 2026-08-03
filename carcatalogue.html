@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Auto Fusion</title>
+    <link rel="stylesheet" href="css/style.css" />
+        <link rel="shortcut icon" href="assest/Black Red Modern Automotive Brand Logo.png" type="image/x-icon">
+
+  </head>
+  <body>
+    <header class="navbar">
+      <a class="brand" href="index.html" aria-label="">
+        <span class="brand-mark">
+          <img src="assest/Black Red Modern Automotive Brand Logo.png" alt="Auto Fusion logo" class="brand-logo" />
+        </span>
+      </a>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="carcatalogue.html">Catalogue</a>
+        <a href="comparecars.html">Compare Cars</a>
+        <a href="warranty.html">Warranty</a>
+        <a href="finance.html">Finance</a>
+        <a href="dealers.html">Dealers</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="catalog-hero">
+        <div class="catalog-hero-content">
+          <p class="eyebrow">Premium Inventory</p>
+          <h1>Explore Our Premium Car Collection</h1>
+          <p>Browse the latest vehicles from the world,s most trusted automobile brands.</p>
+          <div class="hero-actions">
+            <a href="#inventory" class="hero-button">Browse Inventory</a>
+            <a href="comparecars.html" class="hero-button secondary">Compare Cars</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="filters-section" id="inventory">
+        <div class="filter-panel">
+          <div class="filter-group">
+            <label for="modelSearch">Search by model</label>
+            <input id="modelSearch" type="text" placeholder="Enter car model" />
+          </div>
+          <div class="filter-group">
+            <label for="brandFilter">Brand</label>
+            <select id="brandFilter">
+              <option value="">All Brands</option>
+              <option value="Honda">Honda</option>
+              <option value="Suzuki">Suzuki</option>
+              <option value="Toyota">Toyota</option>
+              <option value="Ford">Ford</option>
+              <option value="Hyundai">Hyundai</option>
+            </select>
+          </div>
+          <div class="filter-group">
+            <label for="priceFilter">Price range</label>
+            <select id="priceFilter">
+              <option value="">Any Price</option>
+              <option value="under25">Under $25,000</option>
+              <option value="25to40">$25,000 - $40,000</option>
+              <option value="over40">$40,000+</option>
+            </select>
+          </div>
+          <div class="filter-group">
+            <label for="fuelFilter">Fuel type</label>
+            <select id="fuelFilter">
+              <option value="">Any Fuel</option>
+              <option value="Petrol">Petrol</option>
+              <option value="Hybrid">Hybrid</option>
+              <option value="Diesel">Diesel</option>
+            </select>
+          </div>
+          <div class="filter-group">
+            <label for="transmissionFilter">Transmission</label>
+            <select id="transmissionFilter">
+              <option value="">Any Transmission</option>
+              <option value="CVT">CVT</option>
+              <option value="Automatic">Automatic</option>
+              <option value="Manual">Manual</option>
+            </select>
+          </div>
+          <button id="clearFilters" class="clear-btn">Clear Filters</button>
+        </div>
+      </section>
+
+      <section class="catalog-section">
+        <div class="section-heading">
+          <h2>Honda Collection</h2>
+          <p>Reliable performance and premium comfort.</p>
+        </div>
+        <div class="catalog-grid">
+          <article class="car-card" data-brand="Honda" data-model="Honda Civic" data-price="24500" data-fuel="Petrol" data-transmission="CVT" data-year="2024" data-engine="1.5L Turbo" data-mileage="18 km/l" data-availability="Available" data-features="Lane Assist, Adaptive Cruise Control, Apple CarPlay" data-colors="Black, Silver, White" data-seating="5" data-economy="17 mpg" data-warranty="3 Years / 60,000 km" data-location="Lahore Showroom" data-finance="Low down payment and fast approval">
+            <div class="car-image-wrap"><img src="assest/2022_Honda_City_.jpg" alt="Honda Civic" /></div>
+            <div class="card-body">
+              <div class="card-topline">
+                <span class="brand-badge">Honda</span>
+              </div>
+              <h3>Honda Civic</h3>
+              <p class="year-price">2024</p>
+              <div class="spec-tags">
+                <span>1.5L Turbo</span>
+                <span>Petrol</span>
+                <span>CVT</span>
+              </div>
+              <p class="mileage">Mileage: 18 km/l</p>
+              <button class="view-details-btn" type="button">View Details</button>
+            </div>
+          </article>
+
+          <article class="car-card" data-brand="Honda" data-model="Honda City" data-price="21500" data-fuel="Petrol" data-transmission="CVT" data-year="2023" data-engine="1.2L i-VTEC" data-mileage="17 km/l" data-availability="In Stock" data-features="Smart Key, Rear Camera, Bluetooth" data-colors="White, Gray, Red" data-seating="5" data-economy="16 mpg" data-warranty="2 Years / 40,000 km" data-location="Gulberg Dealer" data-finance="Flexible financing packages">
+            <div class="car-image-wrap"><img src="assest/2024-Honda-Civic-In-Red.jpg" alt="Honda City" /></div>
+            <div class="card-body">
+              <div class="card-topline">
+                <span class="brand-badge">Honda</span>
+                <span class="availability">In Stock</span>
+              </div>
+              <h3>Honda City</h3>
+              <p class="year-price">2023</p>
+              <div class="spec-tags">
+                <span>1.2L i-VTEC</span>
+                <span>Petrol</span>
+                <span>CVT</span>
+              </div>
+              <p class="mileage">Mileage: 17 km/l</p>
+              <button class="view-details-btn" type="button">View Details</button>
+            </div>
+          </article>
+
+          <article class="car-card" data-brand="Honda" data-model="Honda BR-V" data-price="28900" data-fuel="Petrol" data-transmission="Automatic" data-year="2024" data-engine="1.5L i-VTEC" data-mileage="15 km/l" data-availability="Pre-Order" data-features="7-Seater, Cruise Control, Rear AC" data-colors="Silver, Black, White" data-seating="7" data-economy="14 mpg" data-warranty="3 Years / 60,000 km" data-location="DHA Showroom" data-finance="Special family discounts">
+            <div class="car-image-wrap"><img src="assest/2022_Honda_BR-V_P.jpg" alt="Honda BR-V" /></div>
+            <div class="card-body">
+              <div class="card-topline">
+                <span class="brand-badge">Honda</span>
+                <span class="availability">Pre-Order</span>
+              </div>
+              <h3>Honda BR-V</h3>
+              <p class="year-price">2024</p>
+              <div class="spec-tags">
+                <span>1.5L i-VTEC</span>
+                <span>Petrol</span>
+                <span>Automatic</span>
+              </div>
+              <p class="mileage">Mileage: 15 km/l</p>
+              <button class="view-details-btn" type="button">View Details</button>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="catalog-section">
+        <div class="section-heading">
+          <h2>Suzuki Collection</h2>
+          <p>Compact efficiency with modern city-friendly design.</p>
+        </div>
+        <div class="catalog-grid">
+          <article class="car-card" data-brand="Suzuki" data-model="Suzuki Alto" data-price="12900" data-fuel="Petrol" data-transmission="Manual" data-year="2022" data-engine="0.8L Petrol" data-mileage="22 km/l" data-availability="Available" data-features="ABS, Airbags, Compact Design" data-colors="Red, White, Silver" data-seating="5" data-economy="20 mpg" data-warranty="2 Years / 40,000 km" data-location="Johar Town Dealer" data-finance="Budget-friendly plans">
+            <div class="car-image-wrap"><img src="assest/Suzuki Alto.jpg" alt="Suzuki Alto" /></div>
+            <div class="card-body">
+              <div class="card-topline">
+                <span class="brand-badge">Suzuki</span>
+                <span class="availability">Available</span>
+              </div>
+              <h3>Suzuki Alto</h3>
+              <p class="year-price">2022</p>
+              <div class="spec-tags">
+                <span>0.8L</span>
+                <span>Petrol</span>
+                <span>Manual</span>
+              </div>
+              <p class="mileage">Mileage: 22 km/l</p>
+              <button class="view-details-btn" type="button">View Details</button>
+            </div>
+          </article>
+
+          <article class="car-card" data-brand="Suzuki" data-model="Suzuki Swift" data-price="18800" data-fuel="Petrol" data-transmission="Automatic" data-year="2023" data-engine="1.2L Dualjet" data-mileage="20 km/l" data-availability="Limited" data-features="Touchscreen, Rear Camera, Stability Control" data-colors="Blue, White, Black" data-seating="5" data-economy="18 mpg" data-warranty="2 Years / 40,000 km" data-location="Model Town Dealer" data-finance="Competitive EMI options">
+            <div class="car-image-wrap"><img src="assest/Suzuki swi.jpg" alt="Suzuki Swift" /></div>
+            <div class="card-body">
+              <div class="card-topline">
+                <span class="brand-badge">Suzuki</span>
+                <span class="availability">Limited</span>
+              </div>
+              <h3>Suzuki Swift</h3>
+              <p class="year-price">2023</p>
+              <div class="spec-tags">
+                <span>1.2L Dual jet</span>
+                <span>Petrol</span>
+                <span>Automatic</span>
+              </div>
+              <p class="mileage">Mileage: 20 km/l</p>
+              <button class="view-details-btn" type="button">View Details</button>
+            </div>
+          </article>
+
+          <article class="car-card" data-brand="Suzuki" data-model="Suzuki Cultus" data-price="15400" data-fuel="Petrol" data-transmission="Manual" data-year="2022" data-engine="1.0L" data-mileage="21 km/l" data-availability="Available" data-features="Economy Drive, AC, Power Steering" data-colors="White, Gray, Black" data-seating="5" data-economy="19 mpg" data-warranty="2 Years / 40,000 km" data-location="Bahria Town Dealer" data-finance="Easy monthly installments">
+            <div class="car-image-wrap"><img src="assest/Suzuki Cultus.png" alt="Suzuki Cultus" /></div>
+            <div class="card-body">
+              <div class="card-topline">
+                <span class="brand-badge">Suzuki</span>
+                <span class="availability">Available</span>
+              </div>
+              <h3>Suzuki Cultus</h3>
+              <p class="year-price">2022</p>
+              <div class="spec-tags">
+                <span>1.0L</span>
+                <span>Petrol</span>
+                <span>Manual</span>
+              </div>
+              <p class="mileage">Mileage: 21 km/l</p>
+              <button class="view-details-btn" type="button">View Details</button>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="catalog-section">
+        <div class="section-heading">
+          <h2>Toyota Collection</h2>
+          <p>Dependable luxury and advanced safety features.</p>
+        </div>
+        <div class="catalog-grid">
+          <article class="car-card" data-brand="Toyota" data-model="Toyota Corolla" data-price="26500" data-fuel="Hybrid" data-transmission="CVT" data-year="2024" data-engine="1.8L Hybrid" data-mileage="19 km/l" data-availability="Available" data-features="Toyota Safety Sense, Smart Entry, LED Headlights" data-colors="White, Gray, Black" data-seating="5" data-economy="18 mpg" data-warranty="3 Years / 60,000 km" data-location="Main Boulevard Dealer" data-finance="Hybrid finance offers">
+            <div class="car-image-wrap"><img src="assest/toyta carola.png" alt="Toyota Corolla" /></div>
+            <div class="card-body">
+              <div class="card-topline">
+                <span class="brand-badge">Toyota</span>
+                <span class="availability">Available</span>
+              </div>
+              <h3>Toyota Corolla</h3>
+              <p class="year-price">2024</p>
+              <div class="spec-tags">
+                <span>1.8L Hybrid</span>
+                <span>Hybrid</span>
+                <span>CVT</span>
+              </div>
+              <p class="mileage">Mileage: 19 km/l</p>
+              <button class="view-details-btn" type="button">View Details</button>
+            </div>
+          </article>
+
+          <article class="car-card" data-brand="Toyota" data-model="Toyota Yaris" data-price="23200" data-fuel="Hybrid" data-transmission="CVT" data-year="2023" data-engine="1.5L Hybrid" data-mileage="18 km/l" data-availability="In Stock" data-features="Lane Keeping, Rear AC, Multimedia System" data-colors="Red, White, Gray" data-seating="5" data-economy="17 mpg" data-warranty="3 Years / 60,000 km" data-location="Cavalry Ground Dealer" data-finance="Special customer financing">
+            <div class="car-image-wrap"><img src="assest/toyota yaris.jpg" alt="Toyota Yaris" /></div>
+            <div class="card-body">
+              <div class="card-topline">
+                <span class="brand-badge">Toyota</span>
+                <span class="availability">In Stock</span>
+              </div>
+              <h3>Toyota Yaris</h3>
+              <p class="year-price">2023</p>
+              <div class="spec-tags">
+                <span>1.5L Hybrid</span>
+                <span>Hybrid</span>
+                <span>CVT</span>
+              </div>
+              <p class="mileage">Mileage: 18 km/l</p>
+              <button class="view-details-btn" type="button">View Details</button>
+            </div>
+          </article>
+
+          <article class="car-card" data-brand="Toyota" data-model="Toyota Fortuner" data-price="51900" data-fuel="Diesel" data-transmission="Automatic" data-year="2024" data-engine="2.8L Diesel" data-mileage="13 km/l" data-availability="Limited" data-features="Premium Leather, 4WD, Off-Road Control" data-colors="Black, White, Silver" data-seating="7" data-economy="12 mpg" data-warranty="4 Years / 80,000 km" data-location="Islamabad Dealer" data-finance="Luxury financing plans">
+            <div class="car-image-wrap"><img src="assest/TOYOTA-FORTUNER-.jpg" alt="Toyota Fortuner" /></div>
+            <div class="card-body">
+              <div class="card-topline">
+                <span class="brand-badge">Toyota</span>
+                <span class="availability">Limited</span>
+              </div>
+              <h3>Toyota Fortuner</h3>
+              <p class="year-price">2024</p>
+              <div class="spec-tags">
+                <span>2.8L Diesel</span>
+                <span>Diesel</span>
+                <span>Automatic</span>
+              </div>
+              <p class="mileage">Mileage: 13 km/l</p>
+              <button class="view-details-btn" type="button">View Details</button>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="catalog-section">
+        <div class="section-heading">
+          <h2>Ford Collection</h2>
+          <p>Built for power, toughness, and versatility.</p>
+        </div>
+        <div class="catalog-grid">
+          <article class="car-card" data-brand="Ford" data-model="Ford Ranger" data-price="40900" data-fuel="Diesel" data-transmission="Automatic" data-year="2024" data-engine="2.0L Bi-Turbo" data-mileage="14 km/l" data-availability="Available" data-features="4x4, Towing Package, Off-Road Assist" data-colors="Blue, Black, White" data-seating="5" data-economy="13 mpg" data-warranty="3 Years / 60,000 km" data-location="Karachi Showroom" data-finance="Pickup financing deals">
+            <div class="car-image-wrap"><img src="assest/Ford rangers.jpg" alt="Ford Ranger" /></div>
+            <div class="card-body">
+              <div class="card-topline">
+                <span class="brand-badge">Ford</span>
+                <span class="availability">Available</span>
+              </div>
+              <h3>Ford Ranger</h3>
+              <p class="year-price">2024</p>
+              <div class="spec-tags">
+                <span>2.0L Bi-Turbo</span>
+                <span>Diesel</span>
+                <span>Automatic</span>
+              </div>
+              <p class="mileage">Mileage: 14 km/l</p>
+              <button class="view-details-btn" type="button">View Details</button>
+            </div>
+          </article>
+
+          <article class="car-card" data-brand="Ford" data-model="Ford Everest" data-price="45900" data-fuel="Diesel" data-transmission="Automatic" data-year="2024" data-engine="2.0L Turbo" data-mileage="13 km/l" data-availability="Pre-Order" data-features="Panoramic Roof, 7 Seats, Terrain Modes" data-colors="Gray, Black, White" data-seating="7" data-economy="12 mpg" data-warranty="3 Years / 60,000 km" data-location="Lahore Showroom" data-finance="Luxury SUV finance offers">
+            <div class="car-image-wrap"><img src="assest/ford everest.jpg" alt="Ford Everest" /></div>
+            <div class="card-body">
+              <div class="card-topline">
+                <span class="brand-badge">Ford</span>
+                <span class="availability">Pre-Order</span>
+              </div>
+              <h3>Ford Everest</h3>
+              <p class="year-price">2024</p>
+              <div class="spec-tags">
+                <span>2.0L Turbo</span>
+                <span>Diesel</span>
+                <span>Automatic</span>
+              </div>
+              <p class="mileage">Mileage: 13 km/l</p>
+              <button class="view-details-btn" type="button">View Details</button>
+            </div>
+          </article>
+
+          <article class="car-card" data-brand="Ford" data-model="Ford Mustang" data-price="58900" data-fuel="Petrol" data-transmission="Automatic" data-year="2023" data-engine="5.0L V8" data-mileage="11 km/l" data-availability="Limited" data-features="Performance Package, Leather Seats, Sport Design" data-colors="Red, Black, White" data-seating="4" data-economy="10 mpg" data-warranty="4 Years / 80,000 km" data-location="Islamabad Dealer" data-finance="Performance vehicle financing">
+            <div class="car-image-wrap"><img src="assest/Ford Mustang.jpg" alt="Ford Mustang" /></div>
+            <div class="card-body">
+              <div class="card-topline">
+                <span class="brand-badge">Ford</span>
+                <span class="availability">Limited</span>
+              </div>
+              <h3>Ford Mustang</h3>
+              <p class="year-price">2023</p>
+              <div class="spec-tags">
+                <span>5.0L V8</span>
+                <span>Petrol</span>
+                <span>Automatic</span>
+              </div>
+              <p class="mileage">Mileage: 11 km/l</p>
+              <button class="view-details-btn" type="button">View Details</button>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="catalog-section">
+        <div class="section-heading">
+          <h2>Hyundai Collection</h2>
+          <p>Modern design, smart technology, and exceptional comfort.</p>
+        </div>
+        <div class="catalog-grid">
+          <article class="car-card" data-brand="Hyundai" data-model="Hyundai Tucson" data-price="32300" data-fuel="Hybrid" data-transmission="Automatic" data-year="2024" data-engine="1.6L Hybrid" data-mileage="16 km/l" data-availability="Available" data-features="Panoramic Sunroof, Smart Cruise, Safety Sense" data-colors="Silver, White, Black" data-seating="5" data-economy="15 mpg" data-warranty="3 Years / 60,000 km" data-location="Gulberg Dealer" data-finance="Flexible SUV financing">
+            <div class="car-image-wrap"><img src="assest/Ford Mustang.jpg" alt="Hyundai Tucson" /></div>
+            <div class="card-body">
+              <div class="card-topline">
+                <span class="brand-badge">Hyundai</span>
+                <span class="availability">Available</span>
+              </div>
+              <h3>Hyundai Tucson</h3>
+              <p class="year-price">2024</p>
+              <div class="spec-tags">
+                <span>1.6L Hybrid</span>
+                <span>Hybrid</span>
+                <span>Automatic</span>
+              </div>
+              <p class="mileage">Mileage: 16 km/l</p>
+              <button class="view-details-btn" type="button">View Details</button>
+            </div>
+          </article>
+
+          <article class="car-card" data-brand="Hyundai" data-model="Hyundai Elantra" data-price="24400" data-fuel="Petrol" data-transmission="Automatic" data-year="2023" data-engine="2.0L MPI" data-mileage="17 km/l" data-availability="In Stock" data-features="Digital Cluster, Wireless Charging, Premium Audio" data-colors="Blue, White, Gray" data-seating="5" data-economy="16 mpg" data-warranty="3 Years / 60,000 km" data-location="Model Town Dealer" data-finance="Easy car loan plans">
+            <div class="car-image-wrap"><img src="assest/hydundai elantra.png" alt="Hyundai Elantra" /></div>
+            <div class="card-body">
+              <div class="card-topline">
+                <span class="brand-badge">Hyundai</span>
+                <span class="availability">In Stock</span>
+              </div>
+              <h3>Hyundai Elantra</h3>
+              <p class="year-price">2023</p>
+              <div class="spec-tags">
+                <span>2.0L MPI</span>
+                <span>Petrol</span>
+                <span>Automatic</span>
+              </div>
+              <p class="mileage">Mileage: 17 km/l</p>
+              <button class="view-details-btn" type="button">View Details</button>
+            </div>
+          </article>
+
+          <article class="car-card" data-brand="Hyundai" data-model="Hyundai Santa Fe" data-price="39800" data-fuel="Petrol" data-transmission="Automatic" data-year="2024" data-engine="2.5L Turbo" data-mileage="14 km/l" data-availability="Limited" data-features="Three-Row Seating, Smart Key, Advanced Safety" data-colors="Black, White, Silver" data-seating="7" data-economy="13 mpg" data-warranty="4 Years / 80,000 km" data-location="DHA Showroom" data-finance="Extended EMI plans">
+            <div class="car-image-wrap"><img src="assest/Hyundai Santa.jpg" alt="Hyundai Santa Fe" /></div>
+            <div class="card-body">
+              <div class="card-topline">
+                <span class="brand-badge">Hyundai</span>
+                <span class="availability">Limited</span>
+              </div>
+              <h3>Hyundai Santa Fe</h3>
+              <p class="year-price">2024</p>
+              <div class="spec-tags">
+                <span>2.5L Turbo</span>
+                <span>Petrol</span>
+                <span>Automatic</span>
+              </div>
+              <p class="mileage">Mileage: 14 km/l</p>
+              <button class="view-details-btn" type="button">View Details</button>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-column">
+        <h3>AutoWorld</h3>
+        <p>Premium automobiles, verified dealers, and trusted buying guidance for every journey.</p>
+      </div>
+      <div class="footer-column">
+        <h3>Quick Links</h3>
+        <a href="home.html">Home</a>
+        <a href="contact.html">Contact Us</a>
+        <a href="carcatalogue.html">Car Catalogue</a>
+        <a href="finance.html">Finance</a>
+      </div>
+      <div class="footer-column">
+        <h3>Contact</h3>
+        <p>+924254387210</p>
+        <p>info@autoworld.com</p>
+        <p>© 2026 AutoWorld. All Rights Reserved.</p>
+      </div>
+    </footer>
+          <a href="#" aria-label="Instagram">ig</a>
+          <a href="#" aria-label="LinkedIn">in</a>
+        </div>
+      </div>
+    </footer>
+
+    <div class="modal-backdrop" id="vehicleModal" aria-hidden="true">
+      <div class="modal-card" role="dialog" aria-modal="true" aria-label="Vehicle details">
+        <button class="modal-close" id="closeModal" type="button">×</button>
+        <img id="modalImage" src="" alt="Selected vehicle" />
+        <div class="modal-content">
+          <h3 id="modalTitle">Vehicle Name</h3>
+          <p id="modalPrice" class="modal-price"></p>
+          <div class="modal-grid">
+            <div>
+              <p><strong>Engine:</strong> <span id="modalEngine"></span></p>
+              <p><strong>Fuel Type:</strong> <span id="modalFuel"></span></p>
+              <p><strong>Transmission:</strong> <span id="modalTransmission"></span></p>
+            </div>
+            <div>
+              <p><strong>Mileage:</strong> <span id="modalMileage"></span></p>
+              <p><strong>Seating:</strong> <span id="modalSeating"></span></p>
+              <p><strong>Availability:</strong> <span id="modalAvailability"></span></p>
+            </div>
+          </div>
+          <p><strong>Key Features:</strong> <span id="modalFeatures"></span></p>
+          <p><strong>Available Colors:</strong> <span id="modalColors"></span></p>
+          <p><strong>Fuel Economy:</strong> <span id="modalEconomy"></span></p>
+          <p><strong>Warranty:</strong> <span id="modalWarranty"></span></p>
+          <p><strong>Dealer Location:</strong> <span id="modalLocation"></span></p>
+          <p><strong>Finance Options:</strong> <span id="modalFinance"></span></p>
+          <div class="modal-actions">
+            <button class="hero-button compare-btn" type="button">Compare</button>
+            <a href="contact.html" class="hero-button secondary">Contact Dealer</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>

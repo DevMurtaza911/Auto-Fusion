@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AutoWorld | Compare Cars</title>
+    <link rel="stylesheet" href="css/style.css" />
+        <link rel="shortcut icon" href="assest/Black Red Modern Automotive Brand Logo.png" type="image/x-icon">
+
+  </head>
+  <body>
+    <header class="navbar">
+      <a class="brand" href="index.html" aria-label="">
+        <span class="brand-mark">
+          <img src="assest/Black Red Modern Automotive Brand Logo.png" alt="Auto Fusion logo" class="brand-logo" />
+        </span>
+      </a>
+      <nav class="nav-links">
+        <a href="home.html">Home</a>
+        <a href="carcatalogue.html">Car Catalogue</a>
+        <a href="comparecars.html">Compare Cars</a>
+        <a href="warranty.html">Warranty</a>
+        <a href="finance.html">Finance</a>
+        <a href="dealers.html">Dealers</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
+
+    <main class="page-content compare-page">
+      <section class="compare-hero">
+        <div class="hero-content">
+          <p class="eyebrow">AutoWorld</p>
+          <h1>Compare Your Favorite Cars</h1>
+          <p>
+            Compare specifications, features, pricing, fuel economy, and safety to make the best buying decision.
+          </p>
+          <div class="hero-badges">
+            <span>Same Brand or Cross Brand</span>
+            <span>Premium Dealership Insights</span>
+            <span>Sticky Comparison Table</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="compare-panel section">
+        <div class="panel-head">
+          <div>
+            <p class="eyebrow">Built for smarter buys</p>
+            <h2>Select two cars and compare instantly</h2>
+          </div>
+          <p>Review performance, comfort, maintenance cost, resale value, and safety side by side.</p>
+        </div>
+
+        <div class="selector-grid">
+          <div class="selector-card">
+            <label for="carSelectA">Car 1</label>
+            <select id="carSelectA"></select>
+          </div>
+          <div class="selector-card">
+            <label for="carSelectB">Car 2</label>
+            <select id="carSelectB"></select>
+          </div>
+          <div class="selector-card actions-card">
+            <button id="compareBtn" class="primary-btn">Compare Now</button>
+          </div>
+        </div>
+
+        <div id="summaryCards" class="summary-cards"></div>
+      </section>
+
+      <section class="comparison-section section alt-bg">
+        <div class="section-heading">
+          <h2>Comparison Results</h2>
+          <p>Highlights show the stronger option for each category.</p>
+        </div>
+
+        <div class="table-shell">
+          <table class="comparison-table">
+            <thead>
+              <tr>
+                <th>Category</th>
+                <th id="carNameA">Vehicle A</th>
+                <th id="carNameB">Vehicle B</th>
+              </tr>
+            </thead>
+            <tbody id="compareTableBody"></tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-column">
+        <h3>AutoWorld</h3>
+        <p>Premium automobiles, verified dealers, and trusted buying guidance for every journey.</p>
+      </div>
+      <div class="footer-column">
+        <h3>Quick Links</h3>
+        <a href="home.html">Home</a>
+        <a href="contact.html">Contact Us</a>
+        <a href="carcatalogue.html">Car Catalogue</a>
+        <a href="finance.html">Finance</a>
+      </div>
+      <div class="footer-column">
+        <h3>Contact</h3>
+        <p>+924254387210</p>
+        <p>info@autoworld.com</p>
+        <p>© 2026 AutoWorld. All Rights Reserved.</p>
+      </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
